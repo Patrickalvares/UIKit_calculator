@@ -15,6 +15,7 @@
 		5093ACAE2B117861004A9E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5093ACAD2B117861004A9E70 /* Assets.xcassets */; };
 		5093ACB12B117861004A9E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5093ACAF2B117861004A9E70 /* LaunchScreen.storyboard */; };
 		5093ACB92B12A659004A9E70 /* OperationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093ACB82B12A659004A9E70 /* OperationButton.swift */; };
+		8842E1E52E00E7F60096E963 /* OperatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842E1E42E00E7F60096E963 /* OperatorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5093ACB02B117861004A9E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5093ACB22B117861004A9E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5093ACB82B12A659004A9E70 /* OperationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationButton.swift; sourceTree = "<group>"; };
+		8842E1E42E00E7F60096E963 /* OperatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				506081DF2B181F8B00B3BDF3 /* CalculatorViewController.swift */,
+				8842E1E42E00E7F60096E963 /* OperatorButton.swift */,
 			);
 			path = StarterProject;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				506081E02B181F8B00B3BDF3 /* CalculatorViewController.swift in Sources */,
 				5093ACA92B11785E004A9E70 /* ViewController.swift in Sources */,
 				5093ACB92B12A659004A9E70 /* OperationButton.swift in Sources */,
+				8842E1E52E00E7F60096E963 /* OperatorButton.swift in Sources */,
 				5093ACA52B11785E004A9E70 /* AppDelegate.swift in Sources */,
 				5093ACA72B11785E004A9E70 /* SceneDelegate.swift in Sources */,
 			);

@@ -5,14 +5,26 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet var roundButtons: [UIButton]!
     
-    @IBOutlet weak var divideButton: UIButton!
-    @IBOutlet weak var multiplyButton: UIButton!
-    @IBOutlet weak var minuButton: UIButton!
-    @IBOutlet weak var plusbutton: UIButton!
+    @IBOutlet weak var divideButton: OperatorButton!
+    @IBOutlet weak var multiplyButton: OperatorButton!
+    @IBOutlet weak var minuButton: OperatorButton!
+    @IBOutlet weak var plusbutton: OperatorButton!
     
-    @IBOutlet weak var equalButton: UIButton!
+    @IBOutlet weak var equalButton: OperatorButton!
     
-    lazy var operationButtons: [UIButton] = [divideButton, multiplyButton, minuButton, plusbutton]
+    @IBOutlet weak var displayLabel: UILabel!
+    
+    lazy var operationButtons: [OperatorButton] = [divideButton, multiplyButton, minuButton, plusbutton]
+    
+    enum Operation {
+        case divide
+        case multiply
+        case sutract
+        case add
+        case none
+    }
+    
+    var operation: Operation = .none
     
 
     override func viewDidLoad() {
@@ -33,10 +45,43 @@ class CalculatorViewController: UIViewController {
     
     }
 
-    @IBAction func didTapOperationButton(_ sender: UIButton) {
+    @IBAction func didTapOperationButton(_ sender: OperatorButton) {
+        let title = sender.currentTitle
+        switch title {
+        case "÷":
+            operation = .divide
+        case "X":
+            operation = .multiply
+        case "-":
+            operation = .sutract
+        case "+":
+            operation = .add
+        default : break
+        }
+        highlightButton(sender)
+    }
+    
+    
+    func deselectButton()
+    {for button in operationButtons{
+        button.backgroundColor = .systemOrange
+        button.setTitleColor(.white, for: .normal)
+    }}
+    func highlightButton(_ button: OperatorButton){
+        deselectButton()
+        button.backgroundColor = .white
+        button.setTitleColor(.systemOrange, for: .normal)
+        button.isSelection = true
     }
     
     @IBAction func didTapNumberButton(_ sender: UIButton) {
+        let number = sender.tag
+        
+        if displayLabel.text == "0" {
+            displayLabel.text = "\(number)"
+        } else {
+            displayLabel.text! += "\(number)"
+        }
     }
     @IBAction func didTapDecimalButton(_ sender: UIButton) {
     }

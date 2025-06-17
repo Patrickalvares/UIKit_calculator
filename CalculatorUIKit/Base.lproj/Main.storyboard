@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rNS-Ca-Ie7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
@@ -373,7 +373,7 @@
                                                     <action selector="didTapPercentButton" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="7Z4-lt-xQX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikl-vE-5sl">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikl-vE-5sl" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="284.33333333333331" y="0.0" width="84.666666666666686" height="85.666666666666671"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <state key="normal" title="Button"/>
@@ -381,7 +381,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="Juf-qH-fWM"/>
+                                                    <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="pi5-GY-Oou"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -389,7 +389,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oII-Qs-5sL">
                                         <rect key="frame" x="0.0" y="95.666666666666686" width="369" height="86"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeT-IR-wvl">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeT-IR-wvl">
                                                 <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="86"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -400,7 +400,7 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="r2f-FC-Nl8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDr-vk-bU3">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDr-vk-bU3">
                                                 <rect key="frame" x="94.666666666666686" y="0.0" width="85" height="86"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -411,7 +411,7 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="9nf-Oy-iB4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwh-Xf-1tQ">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwh-Xf-1tQ">
                                                 <rect key="frame" x="189.66666666666666" y="0.0" width="84.666666666666657" height="86"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -422,7 +422,7 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="s5C-LR-hp3"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-q2-Msn">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-q2-Msn" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="284.33333333333331" y="0.0" width="84.666666666666686" height="86"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <state key="normal" title="Button"/>
@@ -430,7 +430,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="Pof-8x-mdx"/>
+                                                    <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="yQ3-rz-EdB"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -438,7 +438,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q9A-Pk-LH0">
                                         <rect key="frame" x="0.0" y="191.66666666666669" width="369" height="85.666666666666686"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkZ-HK-XYh">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkZ-HK-XYh">
                                                 <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="85.666666666666671"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -449,7 +449,7 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="0ay-5c-icU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPD-V1-fYL">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPD-V1-fYL">
                                                 <rect key="frame" x="94.666666666666686" y="0.0" width="85" height="85.666666666666671"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -460,7 +460,7 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="2OJ-MM-jx3"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dd-SH-M8p">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dd-SH-M8p">
                                                 <rect key="frame" x="189.66666666666666" y="0.0" width="84.666666666666657" height="85.666666666666671"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -471,7 +471,7 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="7Ri-pU-tMH"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-MG-t7H">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-MG-t7H" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="284.33333333333331" y="0.0" width="84.666666666666686" height="85.666666666666671"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <state key="normal" title="Button"/>
@@ -479,7 +479,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="uNR-j1-2HC"/>
+                                                    <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="l6O-m4-q5j"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -487,7 +487,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hXr-pL-ze4">
                                         <rect key="frame" x="0.0" y="287.33333333333331" width="369" height="85.666666666666686"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWr-Qq-9MV">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWr-Qq-9MV">
                                                 <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="85.666666666666671"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -498,7 +498,7 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="M32-ht-lIL"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrX-bn-v7C">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrX-bn-v7C">
                                                 <rect key="frame" x="94.666666666666686" y="0.0" width="85" height="85.666666666666671"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -509,7 +509,7 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="9ZG-DL-G0E"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-JT-I5H">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-JT-I5H">
                                                 <rect key="frame" x="189.66666666666666" y="0.0" width="84.666666666666657" height="85.666666666666671"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -520,7 +520,7 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="o7C-lW-Q9C"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-HY-9DZ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-HY-9DZ" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="284.33333333333331" y="0.0" width="84.666666666666686" height="85.666666666666671"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <state key="normal" title="Button"/>
@@ -528,7 +528,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="frZ-oU-dfO"/>
+                                                    <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="BaL-vu-7Gl"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -605,6 +605,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="displayLabel" destination="H2h-3z-orC" id="ajR-Hs-NVn"/>
                         <outlet property="divideButton" destination="Ikl-vE-5sl" id="tWz-ti-Qpi"/>
                         <outlet property="equalButton" destination="48a-QE-jXj" id="qlz-HW-Q5o"/>
                         <outlet property="minuButton" destination="PU4-MG-t7H" id="vXJ-1L-HNQ"/>
