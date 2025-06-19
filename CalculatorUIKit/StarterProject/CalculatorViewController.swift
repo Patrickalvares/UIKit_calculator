@@ -35,7 +35,7 @@ class CalculatorViewController: UIViewController {
     var operationIsSelected: Bool {
         
         for button in operationButtons {
-            if button.isSelected {
+            if button.isSelection {
                 return true
             }
         }
@@ -44,6 +44,7 @@ class CalculatorViewController: UIViewController {
     
     var previusNumber: Double? = 0
     var equalButtonTapped: Bool = false
+    var shouldStartNewNumber: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +89,7 @@ class CalculatorViewController: UIViewController {
         highlightButton(sender)
         equalButtonTapped = false
         previusNumber = displayNumber
+        shouldStartNewNumber = true
     }
     
     
@@ -110,10 +112,11 @@ class CalculatorViewController: UIViewController {
     @IBAction func didTapNumberButton(_ sender: UIButton) {
         let number = sender.tag
         
-        if operationIsSelected{
+        if shouldStartNewNumber {
             deselectButton()
             displayLabel.text = "\(number)"
-        }else{
+            shouldStartNewNumber = false
+        } else {
             if displayNumber == 0 {
                 displayLabel.text = "\(number)"
             } else {
@@ -159,10 +162,11 @@ class CalculatorViewController: UIViewController {
         }
     }
 
-    @IBAction func didTapEqualButton() {
+    @IBAction func didTapEqualButton(_ sender: UIButton) {
         guard operation != .none else { return }
         performOperation()
         equalButtonTapped = true
+        shouldStartNewNumber = true
     }
     
     @IBAction func didTapPercentButton() {
@@ -187,6 +191,7 @@ class CalculatorViewController: UIViewController {
         displayLabel.text = "0"
         operation = .none
         deselectButton()
+        shouldStartNewNumber = false
     }
     
 }
