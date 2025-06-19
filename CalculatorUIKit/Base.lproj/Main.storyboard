@@ -373,13 +373,13 @@
                                                     <action selector="didTapPercentButton" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="7Z4-lt-xQX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikl-vE-5sl" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikl-vE-5sl" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="284.33333333333331" y="0.0" width="84.666666666666686" height="85.666666666666671"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="÷">
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="÷">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="pi5-GY-Oou"/>
                                                 </connections>
@@ -422,13 +422,13 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="s5C-LR-hp3"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-q2-Msn" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-q2-Msn" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="284.33333333333331" y="0.0" width="84.666666666666686" height="86"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="X">
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="X">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="yQ3-rz-EdB"/>
                                                 </connections>
@@ -471,13 +471,13 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="7Ri-pU-tMH"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-MG-t7H" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-MG-t7H" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="284.33333333333331" y="0.0" width="84.666666666666686" height="85.666666666666671"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="-">
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="l6O-m4-q5j"/>
                                                 </connections>
@@ -520,13 +520,13 @@
                                                     <action selector="didTapNumberButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="o7C-lW-Q9C"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-HY-9DZ" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-HY-9DZ" customClass="OperatorButton" customModule="CalculatorUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="284.33333333333331" y="0.0" width="84.666666666666686" height="85.666666666666671"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="+">
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="didTapOperationButton:" destination="rNS-Ca-Ie7" eventType="touchUpInside" id="BaL-vu-7Gl"/>
                                                 </connections>
